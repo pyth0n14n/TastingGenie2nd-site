@@ -1,28 +1,38 @@
 (function () {
-  'use strict';
+  "use strict";
 
   const pages = [
-    { href: './index.html', label: 'トップページ', match: /(?:^|\/)index\.html$|\/$/ },
-    { href: './privacy-policy.html', label: 'プライバシーポリシー', match: /(?:^|\/)privacy-policy\.html$/ },
+    {
+      href: "./index.html",
+      label: "トップページ",
+      match: /(?:^|\/)index\.html$|\/$/,
+    },
+    {
+      href: "./privacy-policy.html",
+      label: "プライバシーポリシー",
+      match: /(?:^|\/)privacy-policy\.html$/,
+    },
   ];
 
-  const currentPath = window.location.pathname || '/';
+  const currentPath = window.location.pathname || "/";
 
   function isCurrentPage(page) {
     return page.match.test(currentPath);
   }
 
   function renderHeader() {
-    const headerMount = document.getElementById('site-header');
+    const headerMount = document.getElementById("site-header");
 
     if (!headerMount) {
       return;
     }
 
-    const navLinks = pages.map((page) => {
-      const current = isCurrentPage(page) ? ' aria-current="page"' : '';
-      return `<a href="${page.href}"${current}>${page.label}</a>`;
-    }).join('');
+    const navLinks = pages
+      .map((page) => {
+        const current = isCurrentPage(page) ? ' aria-current="page"' : "";
+        return `<a href="${page.href}"${current}>${page.label}</a>`;
+      })
+      .join("");
 
     headerMount.innerHTML = `
       <header class="site-header">
@@ -35,7 +45,7 @@
   }
 
   function renderFooter() {
-    const footerMount = document.getElementById('site-footer');
+    const footerMount = document.getElementById("site-footer");
     const currentYear = new Date().getFullYear();
 
     if (!footerMount) {
@@ -58,4 +68,4 @@
 
   renderHeader();
   renderFooter();
-}());
+})();

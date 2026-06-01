@@ -40,12 +40,26 @@ body {
   min-height: 100vh;
   margin: 0;
   color: var(--color-text);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 1rem;
   line-height: 1.7;
   background:
-    radial-gradient(circle at 12% 0%, rgba(215, 168, 79, 0.2), transparent 28rem),
-    linear-gradient(180deg, var(--color-washi), #fbf7eb 52%, var(--color-washi-deep));
+    radial-gradient(
+      circle at 12% 0%,
+      rgba(215, 168, 79, 0.2),
+      transparent 28rem
+    ),
+    linear-gradient(
+      180deg,
+      var(--color-washi),
+      #fbf7eb 52%,
+      var(--color-washi-deep)
+    );
 }
 
 body::before {
@@ -57,7 +71,9 @@ body::before {
   background-image:
     linear-gradient(rgba(20, 35, 63, 0.025) 1px, transparent 1px),
     linear-gradient(90deg, rgba(20, 35, 63, 0.018) 1px, transparent 1px);
-  background-size: 28px 28px, 28px 28px;
+  background-size:
+    28px 28px,
+    28px 28px;
   opacity: 0.7;
 }
 
@@ -131,7 +147,11 @@ main {
   width: 260px;
   height: 260px;
   content: "";
-  background: radial-gradient(circle, rgba(215, 168, 79, 0.36), transparent 68%);
+  background: radial-gradient(
+    circle,
+    rgba(215, 168, 79, 0.36),
+    transparent 68%
+  );
 }
 
 .card,
@@ -268,7 +288,11 @@ a:focus-visible {
   padding: 12px 20px;
   color: #fffaf0;
   text-decoration: none;
-  background: linear-gradient(135deg, var(--color-seal), var(--color-seal-dark));
+  background: linear-gradient(
+    135deg,
+    var(--color-seal),
+    var(--color-seal-dark)
+  );
   border: 1px solid rgba(159, 53, 38, 0.35);
   border-radius: var(--radius-lg);
   box-shadow: 0 12px 26px rgba(200, 75, 49, 0.22);
@@ -277,7 +301,11 @@ a:focus-visible {
 .cta:hover,
 .cta:focus-visible {
   color: #fffaf0;
-  background: linear-gradient(135deg, var(--color-seal-dark), var(--color-indigo-soft));
+  background: linear-gradient(
+    135deg,
+    var(--color-seal-dark),
+    var(--color-indigo-soft)
+  );
 }
 
 .placeholder {
