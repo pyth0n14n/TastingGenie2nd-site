@@ -224,6 +224,11 @@ ul {
   padding-left: 1.25rem;
 }
 
+ol {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
 li + li {
   margin-top: 0.35rem;
 }
@@ -259,7 +264,7 @@ a:focus-visible {
   width: min(100%, 820px);
   height: auto;
   margin: clamp(24px, 4vw, 34px) 0 0;
-  aspect-ratio: 1200 / 628;
+  aspect-ratio: 1024 / 500;
   object-fit: contain;
   background: rgb(255 250 240 / 8%);
   border: 1px solid rgb(243 223 173 / 22%);
@@ -285,6 +290,88 @@ a:focus-visible {
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 18px;
+}
+
+.step-flow,
+.instruction-list {
+  margin-top: 18px;
+}
+
+.pre-step {
+  display: grid;
+  gap: 6px;
+  padding: 16px;
+  margin-top: 18px;
+  background: rgb(243 223 173 / 28%);
+  border: 1px solid var(--color-line);
+  border-left: 5px solid var(--color-sake-gold);
+  border-radius: var(--radius-sm);
+}
+
+.step-flow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.step-flow li {
+  display: grid;
+  gap: 6px;
+  min-height: 122px;
+  padding: 16px;
+  background: rgb(246 240 223 / 58%);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+}
+
+.step-label {
+  color: var(--color-indigo);
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.instruction-list li + li {
+  margin-top: 0.65rem;
+}
+
+.opt-in-guide {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: clamp(14px, 3vw, 22px);
+  margin-top: 20px;
+}
+
+.screen-placeholder {
+  margin: 0;
+}
+
+.screen-placeholder img {
+  display: block;
+  width: min(100%, 320px);
+  height: auto;
+  max-height: 520px;
+  margin: 0 auto;
+  object-fit: contain;
+  background:
+    linear-gradient(135deg, rgb(215 168 79 / 12%), rgb(20 35 63 / 4%)),
+    var(--color-surface-solid);
+  border: 1px solid var(--color-line-strong);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-subtle);
+}
+
+.screen-placeholder-alert img {
+  background:
+    linear-gradient(135deg, rgb(200 75 49 / 12%), rgb(20 35 63 / 4%)),
+    var(--color-surface-solid);
+}
+
+figcaption {
+  margin-top: 10px;
+  color: var(--color-muted);
+  font-size: 0.95rem;
 }
 
 .note,
