@@ -336,7 +336,8 @@ a:focus-visible {
   margin-top: 0.65rem;
 }
 
-.opt-in-guide {
+.opt-in-guide,
+.app-install-guide {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: clamp(14px, 3vw, 22px);
@@ -369,9 +370,13 @@ a:focus-visible {
 }
 
 figcaption {
+  width: min(100%, 320px);
   margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
   color: var(--color-muted);
   font-size: 0.95rem;
+  text-align: center;
 }
 
 .note,

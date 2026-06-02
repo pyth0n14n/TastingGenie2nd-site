@@ -53,10 +53,10 @@
 
       <section class="card">
         <h2>参加までの基本の流れ</h2>
-        <p>
-          Google
-          Playのクローズドテストは、事前にテスター用のGmailアドレスを登録してから参加リンクを開く流れになります。
-        </p>
+        <p>うまく参加できない場合は、
+          <span><a
+          href="#how-to-join">クローズドテストに参加できない場合</a></span>
+          をご覧ください。</p>
         <div class="pre-step">
           <span class="step-label">事前準備: Gmailアドレスを連絡する</span>
           <span
@@ -66,32 +66,31 @@
         </div>
         <ol class="step-flow" aria-label="クローズドテスト参加手順">
           <li>
-            <span class="step-label">1. opt-inする</span>
+            <span class="step-label">1. Google Playからインストール</span>
             <span
-              >登録完了後、参加リンクを開いてテスター参加に同意します。</span
-            >
-          </li>
-          <li>
-            <span class="step-label">2. Google Playからインストール</span>
-            <span
-              >opt-in後に表示されるGoogle Playのリンク、または<a
+              ><a
                 href="https://play.google.com/store/apps/details?id=io.github.pyth0n14n.tastinggenie"
                 >Google Playのアプリページ</a
               >からアプリをインストールします。</span
             >
           </li>
           <li>
-            <span class="step-label">3. 日本酒を登録</span>
+            <span class="step-label">2. opt-inの確認</span>
             <span
-              >銘柄、酒造、画像など、試したい日本酒の情報を登録します。</span
+              ><a
+                href="https://play.google.com/apps/testing/io.github.pyth0n14n.tastinggenie"
+                >参加リンク</a
+              >を確認し、テスター参加に同意します。</span
             >
           </li>
           <li>
-            <span class="step-label">4. レビューを書く</span>
-            <span>色・香り・味を選び、飲んだ時の印象を記録します。</span>
+            <span class="step-label">3. アプリを使う</span>
+            <span
+              >日本酒の情報を登録し、色・香り・味を選び、飲んだ時の印象を記録します。</span
+            >
           </li>
           <li>
-            <span class="step-label">5. フィードバック送信</span>
+            <span class="step-label">4. フィードバック送信</span>
             <span
               >分かりにくい点、動作の問題、欲しい項目をフォームから送信します。</span
             >
@@ -103,15 +102,37 @@
         </p>
       </section>
 
-      <section class="card">
-        <h2>Google Play クローズドテストの opt-in 手順</h2>
+      <section class="card" id="how-to-join">
+        <h2>クローズドテストに参加できない場合</h2>
+        <h3>Google Playのストアページが表示されない</h3>
         <p>
-          Gmailアドレスの登録完了後、Android端末またはブラウザで以下の順に進めてください。
+          下記のようなエラー画面が表示される場合、1) 開発者がユーザ登録できていない、2) 登録したGmailアドレスのアカウントでログインしていない、が考えられます。ログインに使っているGmailアドレスをご確認の上、問題が解決されない場合は、しばらく時間をおくか、開発者にご連絡ください。
         </p>
+        <div class="app-install-guide">
+          <figure class="screen-placeholder">
+            <img
+              src="./assets/page-not-found.png"
+              alt="Google Playアプリページのエラー画面"
+              width="391"
+              height="129"
+            />
+            <figcaption>エラー画面の例です。</figcaption>
+          </figure>
+          <figure class="screen-placeholder">
+            <img
+              src="./assets/page-found.png"
+              alt="Google Playアプリページの正常画面"
+              width="387"
+              height="426"
+            />
+            <figcaption>こちらが正常な画面です。「インストール」よりアプリをインストールください。</figcaption>
+          </figure>
+        </div>
+        <h3>opt-inの確認</h3>
         <ol class="instruction-list">
           <li>
             Google
-            Playで使うGoogleアカウントにログインします。複数アカウントを使っている場合は、登録したGmailアドレスのアカウントを選んでください。
+            Playで使うGoogleアカウントにログインします。
           </li>
           <li>
             <a
@@ -119,15 +140,20 @@
               >クローズドテスト参加リンク</a
             >を開きます。
           </li>
-          <li>画面に表示される案内を確認し、テスター参加に同意します。</li>
-          <li>
-            opt-in完了後に表示されるGoogle Playの画面、または<a
-              href="https://play.google.com/store/apps/details?id=io.github.pyth0n14n.tastinggenie"
-              >Google Playのアプリページ</a
-            >から、ききさけ帖をインストールします。
-          </li>
+          <li>下記画面のとおりテストへの参加完了をご確認ください。参加できていない場合、画面に表示される案内を確認し、テスター参加に同意します。</li>
         </ol>
         <div class="opt-in-guide">
+          <figure class="screen-placeholder">
+            <img
+              src="./assets/opt-in_ok.png"
+              alt="Google Playクローズドテストでテスター参加が完了した画面"
+              width="392"
+              height="313"
+            />
+            <figcaption>
+              You are a tester. と表示されたら参加完了です。
+            </figcaption>
+          </figure>
           <figure class="screen-placeholder">
             <img
               src="./assets/opt-in_available.png"
@@ -138,18 +164,6 @@
             <figcaption>
               この画面が表示された場合は、Become a
               testerからテスター参加に同意してください。
-            </figcaption>
-          </figure>
-          <figure class="screen-placeholder">
-            <img
-              src="./assets/opt-in_ok.png"
-              alt="Google Playクローズドテストでテスター参加が完了した画面"
-              width="392"
-              height="313"
-            />
-            <figcaption>
-              You are a tester. と表示されたら参加完了です。Google
-              Playからアプリをインストールしてください。
             </figcaption>
           </figure>
           <figure class="screen-placeholder screen-placeholder-alert">
