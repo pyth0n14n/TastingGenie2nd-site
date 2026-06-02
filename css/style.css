@@ -143,6 +143,15 @@ main {
   background: radial-gradient(circle, rgb(215 168 79 / 36%), transparent 68%);
 }
 
+.hero-icon {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 0 0 20px;
+  border-radius: 26px;
+  box-shadow: 0 18px 40px rgb(0 0 0 / 24%);
+}
+
 .card,
 .notice,
 .placeholder,
