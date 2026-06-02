@@ -37,10 +37,17 @@
 
 ## Validation commands
 
-Before completing a task, run:
+Before completing a task, run the same checks used by GitHub Actions locally:
 
 - `npm ci`
 - `npm run check`
+
+If these checks fail, fix the local files before finishing the task.
+Use the available auto-fix commands first when appropriate, then rerun `npm run check`.
+For example:
+
+- `npm run format`
+- `npx stylelint "css/**/*.css" --fix`
 
 If only documentation changed and npm checks are irrelevant, state that clearly in the PR notes.
 

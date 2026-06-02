@@ -54,7 +54,7 @@
 
     footerMount.innerHTML = `
       <footer class="site-footer">
-        <nav class="site-footer__nav" aria-label="サイト内リンク">
+        <nav class="site-footer-nav" aria-label="サイト内リンク">
           <a href="./index.html">トップページ</a>
           <span aria-hidden="true">/</span>
           <a href="./privacy-policy.html">プライバシーポリシー</a>
