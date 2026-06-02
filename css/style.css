@@ -123,7 +123,7 @@ main {
 .hero {
   position: relative;
   overflow: hidden;
-  padding: clamp(48px, 9vw, 84px) var(--space-card) var(--space-section);
+  padding: clamp(24px, 9vw, 24px) var(--space-card) var(--space-section);
   color: #fffaf0;
   background:
     linear-gradient(135deg, rgb(20 35 63 / 96%), rgb(34 58 99 / 90%)),
@@ -252,6 +252,41 @@ a:focus-visible {
   font-size: clamp(1rem, 2.5vw, 1.15rem);
 }
 
+.hero-graphic {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: min(100%, 820px);
+  height: auto;
+  margin: clamp(24px, 4vw, 34px) 0 0;
+  aspect-ratio: 1200 / 628;
+  object-fit: contain;
+  background: rgb(255 250 240 / 8%);
+  border: 1px solid rgb(243 223 173 / 22%);
+  border-radius: var(--radius-md);
+  box-shadow: 0 16px 36px rgb(0 0 0 / 18%);
+}
+
+.recruitment-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  margin-top: clamp(18px, 3vw, 24px);
+  color: #fffaf0;
+  font-size: clamp(1.08rem, 2.6vw, 1.28rem);
+  font-weight: 800;
+  line-height: 1.58;
+}
+
+.hero-actions {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
 .note,
 .notice {
   margin-top: 16px;
@@ -295,6 +330,19 @@ a:focus-visible {
     var(--color-seal-dark),
     var(--color-indigo-soft)
   );
+}
+
+.cta-secondary {
+  color: #fffaf0;
+  background: rgb(255 250 240 / 10%);
+  border-color: rgb(243 223 173 / 35%);
+  box-shadow: none;
+}
+
+.cta-secondary:hover,
+.cta-secondary:focus-visible {
+  color: var(--color-indigo);
+  background: #fffaf0;
 }
 
 .placeholder {
@@ -386,5 +434,10 @@ a:focus-visible {
 
   .grid > div {
     padding: 16px;
+  }
+
+  .hero-actions,
+  .hero-actions .cta {
+    width: 100%;
   }
 }
