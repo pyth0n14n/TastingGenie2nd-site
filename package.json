@@ -1,0 +1,32 @@
+{
+  "name": "tasting-genie-2nd-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "format:check": "prettier --check \"**/*.{html,css,js,json,md}\"",
+    "format": "prettier --write \"**/*.{html,css,js,json,md}\"",
+    "lint:html": "htmlhint \"*.html\"",
+    "lint:css": "stylelint \"css/**/*.css\"",
+    "check": "npm run format:check && npm run lint:html && npm run lint:css"
+  },
+  "devDependencies": {
+    "htmlhint": "1.9.2",
+    "prettier": "3.8.3",
+    "stylelint": "16.26.1",
+    "stylelint-config-standard": "39.0.1"
+  },
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pyth0n14n/TastingGenie2nd-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/pyth0n14n/TastingGenie2nd-site/issues"
+  },
+  "homepage": "https://github.com/pyth0n14n/TastingGenie2nd-site#readme"
+}
