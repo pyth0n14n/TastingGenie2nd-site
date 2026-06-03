@@ -53,10 +53,11 @@
 
       <section class="card">
         <h2>参加までの基本の流れ</h2>
-        <p>うまく参加できない場合は、
-          <span><a
-          href="#how-to-join">クローズドテストに参加できない場合</a></span>
-          をご覧ください。</p>
+        <p>
+          うまく参加できない場合は、<a href="#app-install-guide"
+            >アプリのインストール方法</a
+          >と<a href="#opt-in-check">opt-inの確認方法</a>をご覧ください。
+        </p>
         <div class="pre-step">
           <span class="step-label">事前準備: Gmailアドレスを連絡する</span>
           <span
@@ -66,7 +67,7 @@
         </div>
         <ol class="step-flow" aria-label="クローズドテスト参加手順">
           <li>
-            <span class="step-label">1. Google Playからインストール</span>
+            <span class="step-label">1. アプリをインストール</span>
             <span
               ><a
                 href="https://play.google.com/store/apps/details?id=io.github.pyth0n14n.tastinggenie"
@@ -102,22 +103,24 @@
         </p>
       </section>
 
-      <section class="card" id="how-to-join">
-        <h2>クローズドテストに参加できない場合</h2>
-        <h3>Google Playのストアページが表示されない</h3>
-        <p>
-          下記のようなエラー画面が表示される場合、1) 開発者がユーザ登録できていない、2) 登録したGmailアドレスのアカウントでログインしていない、が考えられます。ログインに使っているGmailアドレスをご確認の上、問題が解決されない場合は、しばらく時間をおくか、開発者にご連絡ください。
-        </p>
+      <section class="card" id="app-install-guide">
+        <h2>【流れ】 1. アプリのインストール方法</h2>
+        <ol class="instruction-list">
+          <li>
+          <a
+            href="https://play.google.com/store/apps/details?id=io.github.pyth0n14n.tastinggenie"
+            >Google Playのアプリページ</a
+          >を開いてください。必要に応じて事前に登録したGmailアドレスのGoogleアカウントでログインください。
+          </li>
+          <li>
+            ストアページが表示されてインストールできれば、クローズドテストに参加した状態になります。
+            <a
+              href="#opt-in-check"
+              >流れ2</a>
+            にてご確認ください。
+          </li>
+        </ol>
         <div class="app-install-guide">
-          <figure class="screen-placeholder">
-            <img
-              src="./assets/page-not-found.png"
-              alt="Google Playアプリページのエラー画面"
-              width="391"
-              height="129"
-            />
-            <figcaption>エラー画面の例です。</figcaption>
-          </figure>
           <figure class="screen-placeholder">
             <img
               src="./assets/page-found.png"
@@ -125,22 +128,37 @@
               width="387"
               height="426"
             />
-            <figcaption>こちらが正常な画面です。「インストール」よりアプリをインストールください。</figcaption>
+            <figcaption>
+              こちらが正常な画面です。「インストール」からアプリをインストールしてください。
+            </figcaption>
+          </figure>
+          <figure class="screen-placeholder">
+            <img
+              src="./assets/page-not-found.png"
+              alt="Google Playアプリページのエラー画面"
+              width="391"
+              height="129"
+            />
+            <figcaption>
+              エラー画面の例です。登録済みのアカウントでログインしていることをご確認のうえ、解決しない場合は、しばらく時間をおくか開発者にご連絡ください。
+            </figcaption>
           </figure>
         </div>
-        <h3>opt-inの確認</h3>
+      </section>
+
+      <section class="card" id="opt-in-check">
+        <h2>【流れ】 2. opt-inの確認方法</h2>
         <ol class="instruction-list">
-          <li>
-            Google
-            Playで使うGoogleアカウントにログインします。
-          </li>
           <li>
             <a
               href="https://play.google.com/apps/testing/io.github.pyth0n14n.tastinggenie"
               >クローズドテスト参加リンク</a
-            >を開きます。
+            >を開きます。必要に応じて事前に登録したGmailアドレスのGoogleアカウントでログインください。
           </li>
-          <li>下記画面のとおりテストへの参加完了をご確認ください。参加できていない場合、画面に表示される案内を確認し、テスター参加に同意します。</li>
+          <li>
+            "You are a tester." と表示されていれば参加済みです。"Become a tester"
+            が表示される場合は、ボタンを押してテスター参加に同意してください。
+          </li>
         </ol>
         <div class="opt-in-guide">
           <figure class="screen-placeholder">
