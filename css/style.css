@@ -438,6 +438,10 @@ a:focus-visible {
   border-radius: var(--radius-md);
 }
 
+.feedback-note .feedback-list {
+  margin-bottom: 12px;
+}
+
 .feedback-list-compact {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 6px 20px;
