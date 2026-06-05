@@ -12,6 +12,11 @@
       label: "プライバシーポリシー",
       match: /(?:^|\/)privacy-policy\.html$/,
     },
+    {
+      href: "./closed-test-guide.html",
+      label: "参加ガイド",
+      match: /(?:^|\/)closed-test-guide\.html$/,
+    },
   ];
 
   const currentPath = window.location.pathname || "/";
@@ -57,11 +62,13 @@
         <nav class="site-footer-nav" aria-label="サイト内リンク">
           <a href="./index.html">トップページ</a>
           <span aria-hidden="true">/</span>
+          <a href="./closed-test-guide.html">参加ガイド</a>
+          <span aria-hidden="true">/</span>
           <a href="./privacy-policy.html">プライバシーポリシー</a>
           <span aria-hidden="true">/</span>
           <a href="https://github.com/pyth0n14n/TastingGenie2nd-site" rel="noopener noreferrer" target="_blank">GitHub</a>
         </nav>
-        <p>&copy; ${currentYear} ききさけ帖 開発者. All rights reserved.</p>
+        <p>&copy; ${currentYear} ききさけ帖 Shoei Nashimoto. All rights reserved.</p>
       </footer>
     `;
   }
