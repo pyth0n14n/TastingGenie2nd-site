@@ -443,6 +443,30 @@ a:focus-visible {
   gap: 6px 20px;
 }
 
+.card-action {
+  margin-top: 18px;
+}
+
+.elevator-pitch {
+  display: grid;
+  gap: 14px;
+  padding: clamp(18px, 4vw, 26px);
+  background:
+    linear-gradient(135deg, rgb(243 223 173 / 38%), rgb(255 251 241 / 76%)),
+    var(--color-surface-solid);
+  border: 1px solid var(--color-line-strong);
+  border-left: 6px solid var(--color-seal);
+  border-radius: var(--radius-md);
+}
+
+.elevator-pitch p {
+  margin: 0;
+  color: var(--color-indigo);
+  font-size: clamp(1.08rem, 2.4vw, 1.24rem);
+  font-weight: 800;
+  line-height: 1.72;
+}
+
 .opt-in-guide,
 .app-install-guide {
   display: grid;
