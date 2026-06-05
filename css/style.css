@@ -442,6 +442,19 @@ a:focus-visible {
   margin-bottom: 12px;
 }
 
+.notice.participation-notes {
+  padding: 14px 16px;
+  margin-top: 18px;
+  color: var(--color-text);
+  background: rgb(200 75 49 / 9%);
+  border-color: rgb(200 75 49 / 20%);
+  border-left-color: var(--color-seal);
+}
+
+.closed-test-requirements-image {
+  margin-top: 18px;
+}
+
 .feedback-list-compact {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 6px 20px;
