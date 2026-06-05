@@ -37,21 +37,24 @@
           height="500"
         />
         <p class="recruitment-copy">
-          日本酒の記録アプリ「ききさけ帖」を、公開前に試してくれる方を募集しています。<br />
-          記録のしやすさ、選択肢の分かりやすさ、使っていて迷う点をフィードバックお願いします。
+          日本酒のテイスティングアプリ「ききさけ帖」を、公開前に試してくれる方を募集しています。<br />
+          リリースに向けて、一緒に価値検証に参加し、初期版を育ててもらえると助かります。
         </p>
-        <div class="hero-actions" aria-label="クローズドテスト関連リンク">
+        <!-- <div class="hero-actions" aria-label="クローズドテスト関連リンク">
           <a class="cta" href="#participation-guide"
             >クローズドテストに参加する</a
           >
           <a class="cta cta-secondary" href="#feedback-guide"
             >フィードバック観点を見る</a
           >
-        </div>
+        </div> -->
       </section>
 
       <section class="card">
         <h2>このアプリでできること</h2>
+        <p>
+          「日本酒は好きだけど、どう評価したら良いか分からない」というユーザーの課題を解決するために、以下のような機能を提供します。
+        </p>
         <div class="grid">
           <div>
             <h3>日本酒を記録</h3>
@@ -63,18 +66,23 @@
           </div>
           <div>
             <h3>選択式で評価</h3>
-            <p>色・香り・味を選ぶ形式にして、初心者でも記録しやすくします。</p>
+            <p>
+              色・香り・味を<em>選ぶ形式</em>にして、初心者でも記録しやすくします。
+            </p>
           </div>
         </div>
+        <p class="card-action">
+          <a class="cta cta-secondary-on-light" href="./about.html"
+            >ききさけ帖について詳しく見る</a
+          >
+        </p>
       </section>
 
       <section class="card" id="participation-guide">
         <h2>参加までの基本の流れ</h2>
         <p>
-          うまく参加できない場合は、<a
-            href="./closed-test-guide.html#app-install-guide"
-            >アプリのインストール方法</a
-          >と<a href="./closed-test-guide.html#opt-in-check">opt-inの確認方法</a
+          うまく参加できない場合は、<a href="./closed-test-guide.html"
+            >クローズドテスト参加ガイド</a
           >をご覧ください。
         </p>
         <div class="pre-step">
@@ -121,25 +129,42 @@
             >
           </li>
         </ol>
-        <p class="note">
-          <span class="step-label">補足</span>
-          フィードバックは何度でも可能です。まとめて送っても良いですし、気づいたときにどんどん送っていただいても大丈夫です。<br />
-          アプリを使う際は、実際にお酒を飲まなくても大丈夫です。飲んだときの印象を思い出しながら、色・香り・味を選んでみてください。
-        </p>
-        <p>
-          <a class="cta cta-secondary-on-light" href="./closed-test-guide.html"
-            >詳しい参加手順を見る</a
-          >
-        </p>
+        <div class="notice participation-notes">
+          <h3>参加時の注意事項</h3>
+          <ul class="feedback-list">
+            <li>
+              実際にお酒を飲まなくても、過去に飲んだときの印象を思い出しながら試してもらえれば大丈夫です。
+            </li>
+            <li>
+              クローズドテスト終了まで、opt-inの状態にしておいてください。詳細は<a
+                href="./closed-test-guide.html#closed-test-requirements"
+                >要件</a
+              >をご覧ください。
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="card feedback-guide" id="feedback-guide">
         <h2>フィードバック観点</h2>
-        <p>
-          気づいたことは、<a href="https://forms.gle/rYaq84AQLRVStgNR7"
-            >Googleフォーム</a
-          >、LINE、メールなど、送りやすい方法で送ってください。細かく整理しなくて大丈夫です。「この画面で迷った」「ここで保存できなかった」「この言葉が分からなかった」など、気づいたことをそのまま送ってください。
-        </p>
+
+        <div class="feedback-note">
+          <h3>フィードバックの送り方</h3>
+          <p>
+            気づいたことは、<a href="https://forms.gle/rYaq84AQLRVStgNR7"
+              >Googleフォーム</a
+            >で送ってください。LINEやメールでもOKです。細かく整理しなくて大丈夫です。
+          </p>
+          <ul class="feedback-list feedback-list-compact">
+            <li>どの画面か</li>
+            <li>何をしようとしたか</li>
+            <li>実際に何が起きたか</li>
+            <li>（可能なら）スクリーンショットを添付</li>
+          </ul>
+          <p>
+            「この画面で迷った」「ここで保存できなかった」「この言葉が分からなかった」のように、そのまま書いてください。フィードバックは何度でも送れます。
+          </p>
+        </div>
 
         <div class="feedback-focus">
           <div class="feedback-focus-main">
@@ -194,16 +219,6 @@
               </li>
             </ul>
           </details>
-        </div>
-
-        <div class="feedback-note">
-          <h3>送るときに書いてもらえると助かること</h3>
-          <ul class="feedback-list feedback-list-compact">
-            <li>どの画面か</li>
-            <li>何をしようとしたか</li>
-            <li>実際に何が起きたか</li>
-            <li>（可能なら）スクリーンショットを添付</li>
-          </ul>
         </div>
       </section>
 

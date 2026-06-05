@@ -8,14 +8,19 @@
       match: /(?:^|\/)index\.html$|\/$/,
     },
     {
-      href: "./privacy-policy.html",
-      label: "プライバシーポリシー",
-      match: /(?:^|\/)privacy-policy\.html$/,
+      href: "./about.html",
+      label: "ききさけ帖について",
+      match: /(?:^|\/)about\.html$/,
     },
     {
       href: "./closed-test-guide.html",
       label: "参加ガイド",
       match: /(?:^|\/)closed-test-guide\.html$/,
+    },
+    {
+      href: "./privacy-policy.html",
+      label: "プライバシーポリシー",
+      match: /(?:^|\/)privacy-policy\.html$/,
     },
   ];
 
@@ -61,6 +66,8 @@
       <footer class="site-footer">
         <nav class="site-footer-nav" aria-label="サイト内リンク">
           <a href="./index.html">トップページ</a>
+          <span aria-hidden="true">/</span>
+          <a href="./about.html">ききさけ帖について</a>
           <span aria-hidden="true">/</span>
           <a href="./closed-test-guide.html">参加ガイド</a>
           <span aria-hidden="true">/</span>
