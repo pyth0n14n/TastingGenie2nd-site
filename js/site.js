@@ -61,7 +61,7 @@
           <span aria-hidden="true">/</span>
           <a href="https://github.com/pyth0n14n/TastingGenie2nd-site" rel="noopener noreferrer" target="_blank">GitHub</a>
         </nav>
-        <p>&copy; ${currentYear} ききさけ帖 開発者. All rights reserved.</p>
+        <p>&copy; ${currentYear} ききさけ帖 Shoei Nashimoto. All rights reserved.</p>
       </footer>
     `;
   }
