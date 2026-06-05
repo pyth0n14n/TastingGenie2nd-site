@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>クローズドテスト参加ガイド | ききさけ帖</title>
+    <meta
+      name="description"
+      content="ききさけ帖のクローズドテスト参加時に、アプリのインストールやopt-inを確認するための手順です。"
+    />
+    <meta
+      property="og:title"
+      content="クローズドテスト参加ガイド | ききさけ帖"
+    />
+    <meta
+      property="og:description"
+      content="ききさけ帖のクローズドテスト参加時に、アプリのインストールやopt-inを確認するための手順です。"
+    />
+    <meta property="og:type" content="website" />
+    <!-- TODO: GitHub Pagesの公開URLが確定したら、og:urlを絶対URLに差し替えてください。 -->
+    <meta property="og:url" content="./closed-test-guide.html" />
+    <meta property="og:image" content="./assets/app-icon.png" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="site-header"></div>
+
+    <main>
+      <a class="back-link" href="./index.html">トップページへ戻る</a>
+
+      <article class="policy-article guide-article">
+        <h1>クローズドテスト参加ガイド</h1>
+        <p class="policy-intro">
+          Google
+          Playのページが見つからない場合や、テスター参加状態を確認したい場合に見る補助ページです。問題なくインストールできている方は、このページを読まなくても大丈夫です。
+        </p>
+
+        <section class="policy-section" id="app-install-guide">
+          <h2>1. アプリのインストール方法</h2>
+          <ol class="instruction-list">
+            <li>
+              <a
+                href="https://play.google.com/store/apps/details?id=io.github.pyth0n14n.tastinggenie"
+                >Google Playのアプリページ</a
+              >を開いてください。必要に応じて事前に登録したGmailアドレスのGoogleアカウントでログインください。
+            </li>
+            <li>
+              ストアページが表示されてインストールできれば、クローズドテストに参加した状態になります。
+              <a href="#opt-in-check">opt-inの確認方法</a>
+              にてご確認ください。
+            </li>
+          </ol>
+          <div class="app-install-guide">
+            <figure class="screen-placeholder">
+              <img
+                src="./assets/page-found.png"
+                alt="Google Playアプリページの正常画面"
+                width="387"
+                height="426"
+              />
+              <figcaption>
+                こちらが正常な画面です。「インストール」からアプリをインストールしてください。
+              </figcaption>
+            </figure>
+            <figure class="screen-placeholder">
+              <img
+                src="./assets/page-not-found.png"
+                alt="Google Playアプリページのエラー画面"
+                width="391"
+                height="129"
+              />
+              <figcaption>
+                エラー画面の例です。登録済みのアカウントでログインしていることをご確認のうえ、解決しない場合は、しばらく時間をおくか開発者にご連絡ください。
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="policy-section" id="opt-in-check">
+          <h2>2. opt-inの確認方法</h2>
+          <ol class="instruction-list">
+            <li>
+              <a
+                href="https://play.google.com/apps/testing/io.github.pyth0n14n.tastinggenie"
+                >クローズドテスト参加リンク</a
+              >を開きます。必要に応じて事前に登録したGmailアドレスのGoogleアカウントでログインください。
+            </li>
+            <li>
+              "You are a tester." と表示されていれば参加済みです。"Become a
+              tester"
+              が表示される場合は、ボタンを押してテスター参加に同意してください。
+            </li>
+          </ol>
+          <div class="opt-in-guide">
+            <figure class="screen-placeholder">
+              <img
+                src="./assets/opt-in_ok.png"
+                alt="Google Playクローズドテストでテスター参加が完了した画面"
+                width="392"
+                height="313"
+              />
+              <figcaption>
+                You are a tester. と表示されたら参加完了です。
+              </figcaption>
+            </figure>
+            <figure class="screen-placeholder">
+              <img
+                src="./assets/opt-in_available.png"
+                alt="Google Playクローズドテストのopt-inでテスター参加できる画面"
+                width="393"
+                height="590"
+              />
+              <figcaption>
+                この画面が表示された場合は、Become a
+                testerからテスター参加に同意してください。
+              </figcaption>
+            </figure>
+            <figure class="screen-placeholder screen-placeholder-alert">
+              <img
+                src="./assets/opt-in_not_available.png"
+                alt="Google Playクローズドテストに参加できない場合に表示される画面"
+                width="392"
+                height="505"
+              />
+              <figcaption>
+                <!-- TODO: 問い合わせフォーム作成後、href を差し替えてください。 -->
+                登録していないアカウント、または参加できない旨の画面が表示される場合は、<a
+                  href="#"
+                  >開発者への連絡フォーム</a
+                >からご連絡ください。
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="./js/site.js" defer></script>
+  </body>
+</html>

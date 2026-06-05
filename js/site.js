@@ -12,6 +12,11 @@
       label: "プライバシーポリシー",
       match: /(?:^|\/)privacy-policy\.html$/,
     },
+    {
+      href: "./closed-test-guide.html",
+      label: "参加ガイド",
+      match: /(?:^|\/)closed-test-guide\.html$/,
+    },
   ];
 
   const currentPath = window.location.pathname || "/";
@@ -56,6 +61,8 @@
       <footer class="site-footer">
         <nav class="site-footer-nav" aria-label="サイト内リンク">
           <a href="./index.html">トップページ</a>
+          <span aria-hidden="true">/</span>
+          <a href="./closed-test-guide.html">参加ガイド</a>
           <span aria-hidden="true">/</span>
           <a href="./privacy-policy.html">プライバシーポリシー</a>
           <span aria-hidden="true">/</span>

@@ -544,6 +544,19 @@ figcaption {
   background: #fffaf0;
 }
 
+.cta-secondary-on-light {
+  color: var(--color-seal-dark);
+  background: rgb(255 251 241 / 72%);
+  border-color: var(--color-line-strong);
+  box-shadow: none;
+}
+
+.cta-secondary-on-light:hover,
+.cta-secondary-on-light:focus-visible {
+  color: #fffaf0;
+  background: var(--color-indigo-soft);
+}
+
 .placeholder {
   display: grid;
   min-height: 180px;
@@ -578,6 +591,10 @@ figcaption {
 .policy-article {
   max-width: 880px;
   padding: clamp(24px, 5vw, 48px);
+}
+
+.guide-article {
+  max-width: none;
 }
 
 .policy-article h1 {
